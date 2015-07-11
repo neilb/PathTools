@@ -6,7 +6,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile
 (
           'DISTNAME' => 'PathTools',
-	  'NAME' => 'Cwd',
+          'NAME' => 'Cwd',
           'VERSION_FROM' => 'Cwd.pm',
           'DEFINE' => join(" ",
                 "-DDOUBLE_SLASHES_SPECIAL=@{[$^O eq q(qnx) || $^O eq q(nto) ? 1 : 0]}",
