@@ -16,6 +16,7 @@ MANIFEST			This list of files
 META.yml
 ppport.h
 README
+t/abs2rel.t
 t/crossplatform.t
 t/cwd.t
 t/Functions.t
