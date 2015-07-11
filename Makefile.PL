@@ -14,6 +14,7 @@ WriteMakefile
           ),
           'PREREQ_PM' => {
                            'Carp' => '0',
+                           ($^O eq 'VMS' ? ('ExtUtils::MakeMaker' => 7.04) : ()),
                            'File::Basename' => '0',
                            'Scalar::Util' => '0',
                            'Test' => '0',
