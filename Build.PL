@@ -89,6 +89,11 @@ my $build = $class->new
 		      'ExtUtils::CBuilder' => 0,
 		      ($^O =~ /^(dos|MSWin32)$/ ? ('ExtUtils::Install' => 1.39) : ()),
 		     },
+   meta_merge => {
+      resources => {
+         repository => 'https://github.com/rjbs/PathTools'
+      }
+   },
    xs_files       => { 'Cwd.xs' => 'lib/Cwd.xs' },
    extra_compiler_flags => \@compiler_flags,
    dynamic_config => 1,  # Because of the $^O checking above
